@@ -13,7 +13,7 @@ const Sidebar = () => {
         alt="Black Avatar"
         className="w-32 h-32 mx-auto rounded-full "
       />
-      <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
+      <h3 className="my-4 text-2xl font-medium tracking-wider font-kaushan">
         <span className="text-green-500">Siddharth </span>Manimaran
       </h3>
       <p className="flex justify-center px-2 py-1 my-3 bg-gray-200 rounded-full item-center">
