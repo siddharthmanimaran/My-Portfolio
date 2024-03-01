@@ -3,25 +3,27 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { FaUserTie } from "react-icons/fa";
 import { MdMyLocation, MdSimCardDownload } from "react-icons/md";
 import { SiGmail } from "react-icons/si";
-import { GrContactInfo } from "react-icons/gr";
 import { FiPhoneIncoming } from "react-icons/fi";
-import Profile from './data/profile.jpeg';
 import Image from 'next/image';
-const Sidebar = () => {
+interface Props {
+  toggleDarkMode: () => void;
+  darkMode: Boolean
+}
+const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
   return (
     <div>
-      <Image src={Profile} alt="Black Avatar" width={120} height={120} objectFit="cover" className="rounded-full" />
+      <Image src='/me-light.webp' alt="Black Avatar" width={120} height={120} objectFit="contain" />
       <h3 className="my-4 text-2xl font-medium tracking-wider font-kaushan">
-        <span className="text-green-500">Siddharth </span>Manimaran
+        <span className="text-green-500 dark:text-Purple">Siddharth </span><span className="dark:text-white">Manimaran</span>
       </h3>
-      <p className="flex justify-center px-2 py-1 my-3 bg-gray-200 rounded-full item-center">
-        <FaUserTie className="w-6 h-6" /> Fullstack Developer
+      <p className="flex justify-center px-2 py-1 my-3 bg-gray-200 rounded-full item-center font-bold dark:bg-gray-500">
+        <FaUserTie className="w-6 h-6 px-1" /> Fullstack Developer
       </p>
-      <a className="flex justify-center px-2 py-1 my-3 bg-gray-200 rounded-full item-center" href="" download="">
+      <a className="flex justify-center px-2 py-1 my-3 bg-gray-200 rounded-full item-center font-bold dark:bg-gray-500" href='/Siddharth.pdf' download="Siddharth.pdf">
         <MdSimCardDownload className="w-6 h-6" />
         Download Resume
       </a>
-      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full">
+      <div className="flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full dark:text-Purple">
         <a href="https://github.com/siddharthmanimaran" target="_blank">
           <DiGithubFull className="w-8 h-8" />
         </a>
@@ -29,9 +31,8 @@ const Sidebar = () => {
           <AiFillLinkedin className="w-8 h-8" />
         </a>
       </div>
-      <div className="py-4 my-5 bg-gray-200" style={{ marginRight: "-1rem", marginLeft: "-1rem" }}>
+      <div className="py-4 my-5 bg-gray-200 dark:bg-gray-500" style={{ marginRight: "-1rem", marginLeft: "-1rem" }}>
         <div className="flex flex-col items-center justify-center space-y-2">
-
           <div className="flex items-center">
             <MdMyLocation className="mr-2" />
             <span>Chennai, Tamil Nadu</span>
@@ -46,19 +47,18 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-
       <div>
         <button
-          className="w-8/12 px-2 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-r from-green-400 to-blue-400"
-          onClick={() => window.open("mailto:siddharth.goldengrove@gmail.com")}
-        >
+          className={`w-8/12 px-2 py-2 my-2 text-white rounded-full focus:outline-none ${darkMode ? "bg-gradient-to-r from-Purple to-black" : "bg-gradient-to-r from-green-400 to-blue-400"}`}
+          onClick={() => window.open("mailto:siddharth.goldengrove@gmail.com")}>
           E-mail Me!!
         </button>
-        <button className="w-8/12 px-2 py-2 my-2 text-white rounded-full bg-gradient-to-r from-blue-400 to-green-400">
-          Light-UI
+        <button
+          className={`w-8/12 px-2 py-2 my-2 text-white rounded-full ${darkMode ? "bg-gradient-to-r from-black to-Purple" : "bg-gradient-to-r from-blue-400 to-green-400"}`} onClick={toggleDarkMode}>
+          {darkMode ? "Light-UI" : "Dark-UI"}
         </button>
       </div>
-    </div>
+    </div >
   );
 };
 

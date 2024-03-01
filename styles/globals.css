@@ -5,6 +5,12 @@
 /* TODO use tailwind */
 
 body {
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  background-color: white;
   font-family: sans-serif;
+}
+.transition-dark-mode {
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
