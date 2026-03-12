@@ -73,9 +73,9 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
   const { isChecking, isResumeAvailable, resumePath } = useResumeAvailability();
 
   return (
-    <aside className="sidebar-shell h-full px-6 py-6 text-left text-gray-900 dark:text-gray-100">
+    <aside className="sidebar-shell px-6 py-6 text-left text-gray-900 dark:text-gray-100">
       <div aria-hidden="true" className="sidebar-grid" />
-      <div className="relative z-10 flex h-full flex-col">
+      <div className="relative z-10 flex flex-col">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="sidebar-label">Portfolio Capsule</p>
@@ -180,7 +180,7 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
           </section>
         </div>
 
-        <div className="mt-8 grid gap-3 md:mt-auto">
+        <div className="mt-8 grid gap-3">
           {isResumeAvailable ? (
             <a className="sidebar-cta sidebar-cta-primary" download="Siddharth.pdf" href={resumePath}>
               <span className="flex items-center gap-2">

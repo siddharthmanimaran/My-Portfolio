@@ -19,8 +19,10 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 				<div className="relative z-10 min-h-screen px-4 py-4 sm:px-6 lg:px-8 xl:py-8">
 					<div className="mx-auto grid max-w-7xl gap-6 xl:grid-cols-12">
-						<div className="xl:col-span-4 xl:self-stretch">
-							<Sidebar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+						<div className="xl:col-span-4">
+							<div className="xl:sticky xl:top-8">
+								<Sidebar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
+							</div>
 						</div>
 
 						<div className="xl:col-span-8">
