@@ -3,7 +3,9 @@ module.exports = {
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         fontFamily: {
+            display: ["Orbitron"],
             kaushan: ["Kaushan Script"],
+            sans: ["Space Grotesk", "Segoe UI", "sans-serif"],
         },
         extend: {
             colors: {

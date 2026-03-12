@@ -1,44 +1,55 @@
-import { FunctionComponent, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const Items: FunctionComponent<{
-  page: string;
-  setPage: Function;
-  name: string;
-  route: string;
-}> = ({ page, setPage, route, name }) => {
-  return page !== name ? (
-    <Link href={route}>
-      <a>
-        <span onClick={() => setPage(name)} className="hover:text-green-500 dark:text-Purple dark:hover:text-DarkPurple">
-          {name}
-        </span>
-      </a>
-    </Link>
-  ) : null;
-};
+const navItems = [
+  {
+    description: "Positioning, strengths, and the way I build products.",
+    name: "About",
+    route: "/",
+  },
+  {
+    description: "How I work through delivery, iteration, and technical ownership.",
+    name: "Experience",
+    route: "/experience",
+  },
+  {
+    description: "A clean snapshot of stack, workflow, and profile details.",
+    name: "Resume",
+    route: "/resume",
+  },
+];
 
 const Navbar = () => {
-  const [page, setPage] = useState<string>("");
   const { pathname } = useRouter();
+  const activeItem = navItems.find(({ route }) => route === pathname) ?? navItems[0];
 
-  useEffect(() => {
-    if (pathname === "/") setPage("About");
-    if (pathname === "/experience") setPage("Experience");
-    if (pathname === "/resume") setPage("Resume");
-  }, []);
   return (
-    <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold text-green-500 border-b-4 border-green-500 md:text-2xl dark:text-Purple dark:border-Purple">
-        {page}
-      </span>
-      <div className="flex space-x-3 text-lg ">
-        <Items page={page} setPage={setPage} name="About" route="/" />
-        <Items page={page} setPage={setPage} name="Experience" route="/experience" />
-        <Items page={page} setPage={setPage} name="Resume" route="/resume" />
+    <header className="nav-shell transition-dark-mode">
+      <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <p className="section-chip">Siddharth Manimaran</p>
+          <h1 className="nav-title font-display">{activeItem.name}</h1>
+          <p className="nav-description">{activeItem.description}</p>
+        </div>
+
+        <div className="nav-status-card">
+          <span className="nav-status-dot" />
+          Open to full-stack opportunities
+        </div>
       </div>
-    </div>
+
+      <nav aria-label="Primary navigation" className="nav-links-wrapper">
+        {navItems.map(({ name, route }) => {
+          const isActive = pathname === route;
+
+          return (
+            <Link href={route} key={route}>
+              <a className={`nav-link ${isActive ? "nav-link-active" : ""}`}>{name}</a>
+            </Link>
+          );
+        })}
+      </nav>
+    </header>
   );
 };
 
