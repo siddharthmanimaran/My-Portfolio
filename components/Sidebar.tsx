@@ -98,8 +98,8 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
                 alt="Portrait of Siddharth Manimaran"
                 className="rounded-2xl"
                 height={132}
-                objectFit="cover"
                 src="/me-light.webp"
+                style={{ objectFit: "cover" }}
                 width={132}
               />
             </div>
