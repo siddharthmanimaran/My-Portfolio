@@ -2,6 +2,8 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
+import AnimatedCursor from "../components/AnimatedCursor";
+import FloatingDoll from "../components/FloatingDoll";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -12,6 +14,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 	};
 	return (
 		<div className={`${darkMode ? 'dark' : ''}`}>
+			<AnimatedCursor />
+			<FloatingDoll />
 			<div className="portfolio-app transition-dark-mode">
 				<div className="portfolio-orb portfolio-orb-one" />
 				<div className="portfolio-orb portfolio-orb-two" />
