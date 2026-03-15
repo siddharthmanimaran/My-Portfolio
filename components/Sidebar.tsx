@@ -130,10 +130,10 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
                 </span>
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 dark:text-white">Full-Stack Engineer</p>
-                  <p className="break-words text-xs leading-5 text-gray-500 dark:text-gray-400">React, Next.js, Node.js, and scalable web delivery</p>
+                  <p className="break-words text-xs leading-5 text-gray-500 dark:text-gray-400">React 19, TypeScript 5, Redux Toolkit, and migration-focused delivery</p>
                 </div>
               </div>
-              <span className="sidebar-metric">3+ yrs</span>
+              <span className="sidebar-metric">4+ yrs</span>
             </div>
           </section>
 

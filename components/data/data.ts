@@ -18,37 +18,49 @@ export const aboutData: IAboutData[] = [
   {
     id: 1,
     title: "Frontend Systems",
-    body: "React and Next.js interfaces designed to feel fast, intentional, and easy to navigate.",
+    body: "React 19 and Next.js interfaces designed to stay fast, intentional, and easy to navigate as products scale.",
     Icon: FaReact,
   },
   {
     id: 2,
-    title: "Design Engineering",
-    body: "Pixel-perfect UI implementation in close collaboration with UX/UI designers — Bootstrap, Material-UI, Styled-Components, and SASS.",
+    title: "Migration Engineering",
+    body: "Phased Angular + NgRx to React 19 + TypeScript 5 migrations with stable rollouts and zero business disruption.",
     Icon: SiNextdotjs,
   },
   {
     id: 3,
-    title: "Backend APIs",
-    body: "Node.js and Express REST APIs supporting real-time features, dynamic data retrieval, and mobile app backend integration.",
-    Icon: IoLogoNodejs,
+    title: "Design Engineering",
+    body: "Pixel-perfect UI implementation in close collaboration with UX/UI designers — Bootstrap, Material-UI, Styled-Components, and SASS.",
+    Icon: RiComputerLine,
   },
   {
     id: 4,
+    title: "Backend APIs",
+    body: "Node.js and Express REST APIs supporting real-time features, dynamic data retrieval, and mobile integration.",
+    Icon: SiExpress,
+  },
+  {
+    id: 5,
     title: "Type-Safe Workflows",
     body: "TypeScript across the stack — keeping components, API contracts, and data flows reliable and easier to evolve.",
     Icon: SiTypescript,
   },
   {
-    id: 5,
-    title: "Data Modeling",
-    body: "Both MongoDB (NoSQL) and PostgreSQL (relational) — schema design, queries, and state management for production applications.",
-    Icon: SiPostgresql,
+    id: 6,
+    title: "State + Build Modernization",
+    body: "Redux Toolkit patterns, Vite 7, Vitest, and modern lint/test workflows that improve delivery speed and confidence.",
+    Icon: IoLogoNodejs,
   },
   {
-    id: 6,
+    id: 7,
+    title: "Data Modeling",
+    body: "Both MongoDB (NoSQL) and PostgreSQL (relational) — schema design, queries, and state management for production applications.",
+    Icon: SiMongodb,
+  },
+  {
+    id: 8,
     title: "Delivery Discipline",
-    body: "Full SDLC experience — Agile and Waterfall — with a track record of leading projects from concept to deployment within strict timelines.",
+    body: "4+ years across Agile and Waterfall delivery, partnering with product, design, and engineering teams end to end.",
     Icon: RiComputerLine,
   },
 ];
@@ -56,15 +68,15 @@ export const aboutData: IAboutData[] = [
 export const spotlightMetrics: IMetric[] = [
   {
     id: 1,
-    value: "3+",
+    value: "4+",
     label: "Years Experience",
-    detail: "Hands-on full-stack delivery across modern web stacks from 2021 to 2024.",
+    detail: "Hands-on full-stack delivery from 2021 to present across modernization, migration, and product development.",
   },
   {
     id: 2,
-    value: "2",
+    value: "3",
     label: "Companies",
-    detail: "Casperon Technologies and Confluxus.io — spanning e-commerce, finance, and sports tech.",
+    detail: "Kloze.Ai, Casperon Technologies, and Confluxus.io across US and India-based teams.",
   },
   {
     id: 3,
@@ -74,42 +86,47 @@ export const spotlightMetrics: IMetric[] = [
   },
   {
     id: 4,
-    value: "30%",
-    label: "Fewer Errors",
-    detail: "Software update deployment cut system errors by 30% and improved performance by 25%.",
+    value: "10+",
+    label: "Modules Rebuilt",
+    detail: "Core modules migrated in a phased Angular-to-React modernization at Kloze.Ai.",
   },
 ];
 
 export const workingPrinciples: IDetailCard[] = [
   {
     id: 1,
-    title: "Design Sensibility + Engineering Discipline",
-    body: "Strong focus on delivering responsive, visually appealing interfaces through close collaboration with UX/UI designers and pixel-perfect implementation.",
+    title: "Migration Without Downtime",
+    body: "Plan migrations in phases, preserve business continuity, and modernize safely without breaking critical user workflows.",
   },
   {
     id: 2,
     title: "Architecture That Scales",
-    body: "From Microfrontend load distribution to Microservice decoupling — building systems designed to grow without becoming a burden to maintain.",
+    body: "Use modular frontend boundaries and service-oriented backend design so features can evolve quickly without monolith friction.",
   },
   {
     id: 3,
+    title: "Design Sensibility + Engineering Discipline",
+    body: "Strong focus on delivering responsive, visually appealing interfaces through close collaboration with UX/UI designers and pixel-perfect implementation.",
+  },
+  {
+    id: 4,
     title: "Delivery Under Constraints",
-    body: "Demonstrated adaptability and problem-solving skills, consistently delivering solutions within strict timelines and resource constraints.",
+    body: "Ship pragmatic solutions under timeline and resource pressure while keeping quality, maintainability, and user impact in focus.",
   },
 ];
 
 export const experienceHighlights: IMetric[] = [
   {
     id: 1,
-    value: "200%",
-    label: "Visit Growth",
-    detail: "SEO strategies and website modernization initiatives at Casperon Technologies.",
+    value: "10+",
+    label: "Modules Migrated",
+    detail: "Dashboards, user management, and alert flows rebuilt during Angular-to-React migration at Kloze.Ai.",
   },
   {
     id: 2,
-    value: "30%",
-    label: "Error Reduction",
-    detail: "Targeted software deployment cut system errors and improved overall application reliability.",
+    value: "200%",
+    label: "Visit Growth",
+    detail: "SEO modernization initiatives at Casperon Technologies produced significant traffic gains.",
   },
   {
     id: 3,
@@ -122,34 +139,48 @@ export const experienceHighlights: IMetric[] = [
 export const experienceJourney: IExperienceEntry[] = [
   {
     id: 1,
-    phase: "Casperon Technologies",
-    title: "Software Developer · April 2022 – June 2024",
-    summary: "Full-stack role focused on feature delivery, architecture modernization, and performance optimization across e-commerce and finance-facing web applications.",
+    phase: "Kloze.Ai, United States",
+    title: "Fullstack Developer · June 2024 – Present",
+    summary: "Leading a phased modernization of a legacy Angular 8 + NgRx product to React 19 + TypeScript 5 while protecting existing business workflows.",
     points: [
-      "Built pixel-perfect UIs using HTML5, CSS3, JavaScript (ES6+), React, and Next.js in close collaboration with UX/UI designers.",
-      "Led Microfrontend architecture implementation to optimize user load distribution across existing projects.",
-      "Designed and integrated Microservice architecture, significantly reducing system load and enhancing efficiency.",
-      "Built RESTful APIs with Node.js to support real-time features and dynamic data retrieval.",
-      "Drove SEO strategies and website modernization, resulting in a 200% increase in unique website visits.",
-      "Deployed software update that reduced system errors by 30% and improved application performance by 25%.",
-      "Optimized performance through image optimization, caching strategies, and reducing unnecessary re-renders.",
+      "Spearheading phased migration from Angular 8 + NgRx to React 19 + TypeScript 5 with zero disruption to live operations.",
+      "Rebuilt 10+ core modules including dashboards, user management, and critical alerts using a modular frontend architecture.",
+      "Standardized global state management with Redux Toolkit patterns to reduce duplicated business logic.",
+      "Implemented persistent authentication and filter-state restoration for continuity across complex user journeys.",
+      "Modernized delivery workflow with Vite 7 and Vitest, resulting in faster iterations and more reliable releases.",
     ],
   },
   {
     id: 2,
-    phase: "Confluxus.io",
-    title: "Software Developer · September 2021 – April 2022",
-    summary: "Developed web applications for Fantasy Football predictors and sports data platforms, working across a React/Next.js/Node.js stack.",
+    phase: "Casperon Technologies",
+    title: "Software Developer · April 2022 – June 2024",
+    summary: "Full-stack role focused on feature delivery, architecture modernization, and performance optimization across e-commerce and finance-facing web applications.",
     points: [
-      "Developed a ReactJS web application that streamlined management of injury player lists for Fantasy Football Predictors.",
-      "Significantly reduced the time required to identify current injury players in the application.",
-      "Implemented dynamic metadata to optimize website pages for SEO purposes.",
-      "Built 3+ responsive web applications using React with smooth UI performance.",
-      "Performed testing and debugging source code within an agile team of 3 individuals.",
+      "Worked with cross-functional teams to gather requirements and deliver new product features and enhancements.",
+      "Developed reusable frontend systems using HTML5, CSS3, JavaScript (ES6+), React, and Next.js.",
+      "Collaborated closely with UX/UI designers to implement pixel-perfect, responsive interfaces.",
+      "Built RESTful APIs with Node.js for real-time features and dynamic data retrieval.",
+      "Led mobile-centric web delivery and Microfrontend architecture adoption for better load distribution.",
+      "Designed and integrated Microservice architecture, significantly reducing system load and enhancing efficiency.",
+      "Drove SEO strategies and website modernization, resulting in a 200% increase in unique website visits.",
+      "Collaborated with mobile developers to support backend integration across app and web experiences.",
+      "Improved website speed through image optimization, caching strategies, and reduced unnecessary re-renders.",
+      "Deployed software update that reduced system errors by 30% and improved application performance by 25%.",
     ],
   },
   {
     id: 3,
+    phase: "Confluxus.io",
+    title: "Software Developer · Sept 2021 – April 2022",
+    summary: "Developed web applications for Fantasy Football predictors and sports data platforms, working across a React/Next.js/Node.js stack.",
+    points: [
+      "Built a React + Next.js application to streamline injury player tracking for fantasy football analysts.",
+      "Implemented dynamic metadata and SEO improvements across multiple web applications.",
+      "Collaborated in an agile team to test, debug, and optimize responsive UI performance.",
+    ],
+  },
+  {
+    id: 4,
     phase: "SRM, Chennai",
     title: "B.Tech · Electronics Engineering · Graduated March 2020",
     summary: "Bachelor of Technology in Electronics Engineering from SRM University, Chennai. Bridged hardware fundamentals with a growing focus on software and web development.",
@@ -163,39 +194,39 @@ export const experienceJourney: IExperienceEntry[] = [
 export const deliveryModes: IDetailCard[] = [
   {
     id: 1,
-    title: "Microfrontend & Microservices",
-    body: "Led architecture changes at Casperon that decoupled frontend modules and reduced back-end load — improving both scalability and deployment confidence.",
+    title: "Legacy-to-Modern Migration",
+    body: "Leading phased migration from Angular 8 + NgRx to React 19 + TypeScript 5 with stable releases and uninterrupted operations.",
   },
   {
     id: 2,
-    title: "SEO & Performance",
-    body: "Drove a 200% increase in unique visits through SEO modernization and performance work — faster pages, better metadata, and optimized rendering.",
+    title: "Architecture for Scale",
+    body: "Applied Microfrontend and Microservice architecture patterns to improve load distribution, maintainability, and system efficiency.",
   },
   {
     id: 3,
-    title: "Cross-Functional Collaboration",
-    body: "Worked closely with designers, mobile developers, and clients from e-commerce and finance to translate requirements into reliable, user-centric features.",
+    title: "Measurable Product Outcomes",
+    body: "Delivered quantifiable impact through SEO modernization and reliability work, including 200% traffic growth and 30% fewer system errors.",
   },
 ];
 
 export const resumeHighlights: IMetric[] = [
   {
     id: 1,
-    value: "3 Yrs",
+    value: "4+ Yrs",
     label: "Experience",
-    detail: "Full-stack delivery at Casperon Technologies and Confluxus.io from 2021 to 2024.",
+    detail: "Full-stack delivery across Kloze.Ai, Casperon Technologies, and Confluxus.io from 2021 to present.",
   },
   {
     id: 2,
-    value: "200%",
-    label: "Visit Growth",
-    detail: "SEO and modernization work that tripled unique website traffic.",
+    value: "10+",
+    label: "Modules Migrated",
+    detail: "Core modules rebuilt during Angular-to-React modernization work at Kloze.Ai.",
   },
   {
     id: 3,
-    value: "30%",
-    label: "Error Reduction",
-    detail: "Targeted software deployment that cut system errors and boosted app performance by 25%.",
+    value: "200%",
+    label: "Visit Growth",
+    detail: "SEO and modernization initiatives that significantly increased unique website traffic.",
   },
 ];
 
@@ -203,39 +234,39 @@ export const resumeCategories: IResumeCategory[] = [
   {
     id: 1,
     title: "Frontend",
-    items: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript", "React", "Next.js", "Redux", "Bootstrap", "SASS", "Material-UI", "Styled-Components", "jQuery"],
+    items: ["HTML5", "CSS3", "JavaScript (ES6+)", "TypeScript 5", "React 19", "Next.js", "Angular", "Bootstrap", "SASS", "Material-UI", "Styled-Components", "jQuery"],
   },
   {
     id: 2,
-    title: "Backend",
-    items: ["Node.js", "Express.js", "REST API", "JWT", "WebSocket", "Microservices", "AJAX"],
+    title: "Backend & APIs",
+    items: ["Node.js", "Express.js", "REST API", "JWT", "WebSocket", "Microservices", "AJAX", "JSON", "XML"],
   },
   {
     id: 3,
-    title: "Databases",
-    items: ["MongoDB", "PostgreSQL"],
+    title: "State & Build",
+    items: ["Redux Toolkit", "Vite 7", "Vitest", "Webpack", "ESLint"],
   },
   {
     id: 4,
-    title: "Tools & Workflow",
-    items: ["Git", "GitHub", "GitLab", "BitBucket", "Jira", "ESLint", "Webpack", "Agile", "VS Code"],
+    title: "Data, Tools & Workflow",
+    items: ["MongoDB", "PostgreSQL", "Git", "GitHub", "GitLab", "BitBucket", "TortoiseSVN", "Jira", "Agile", "VS Code", "Sublime Text", "Notepad++"],
   },
 ];
 
 export const resumeStrengths: IDetailCard[] = [
   {
     id: 1,
-    title: "Architecture Leadership",
-    body: "Led Microfrontend and Microservice architecture implementations that improved scalability, deployment isolation, and system load distribution.",
+    title: "Migration Leadership",
+    body: "Own end-to-end frontend modernization strategy, including phased rollout planning, state architecture, and safe legacy replacement.",
   },
   {
     id: 2,
-    title: "Performance & SEO",
-    body: "Delivered measurable results — 200% more visits via SEO work, 30% fewer errors and 25% better performance through targeted optimization.",
+    title: "Performance & Reliability",
+    body: "Delivered measurable outcomes including 200% traffic growth, 30% fewer errors, and strong release confidence through modernization.",
   },
   {
     id: 3,
     title: "Agile Cross-Functional Delivery",
-    body: "Experienced in SDLC across Agile and Waterfall, collaborating with designers, mobile developers, and clients across e-commerce and finance sectors.",
+    body: "Comfortable across Agile and Waterfall SDLC, collaborating directly with designers, mobile developers, and stakeholders across distributed teams.",
   },
 ];

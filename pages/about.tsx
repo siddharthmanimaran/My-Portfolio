@@ -6,9 +6,9 @@ import {
 } from "../components/data/data";
 
 const teamValuePoints = [
-    "Pixel-perfect React and Next.js interfaces with strong visual sensibility and responsive design.",
-    "Node.js REST APIs and Microservice architecture designed for scalability and performance.",
-    "Agile collaboration across cross-functional teams — from UX designers to mobile developers to clients.",
+    "Migration leadership from Angular + NgRx to React 19 + TypeScript 5 with zero business disruption.",
+    "Scalable frontend systems using Redux Toolkit, modular architecture, and resilient API integration.",
+    "Modern delivery workflows with Vite 7 + Vitest, backed by close UX and cross-functional collaboration.",
 ];
 
 const About = () => {
@@ -21,10 +21,10 @@ const About = () => {
                         Building modern web experiences — sharp in the interface, solid in the backend.
                     </h2>
                     <p className="section-intro mt-6 max-w-3xl">
-                        I am Siddharth Manimaran, a Full Stack Developer with around 3 years of experience across the
-                        complete SDLC — from requirement analysis to deployment and maintenance. I work across React,
-                        Next.js, Node.js, and TypeScript, with hands-on experience in Microfrontend architecture, RESTful
-                        APIs, SEO optimization, and cross-functional collaboration in e-commerce and finance domains.
+                        I am Siddharth Manimaran, a Full Stack Developer with 4+ years of experience across the complete
+                        SDLC — from requirement analysis to deployment and maintenance. I currently lead frontend
+                        modernization at Kloze.Ai, migrating Angular + NgRx systems to React 19 + TypeScript 5, and I
+                        have delivered full-stack products across e-commerce, finance, and sports-tech domains.
                     </p>
                 </article>
 
