@@ -8,8 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "build:tailwind": "tailwindcss build your/styles.css -o output/path/styles.css"
+    "lint": "next lint"
   },
   "dependencies": {
     "@react-pdf/renderer": "^4.3.2",

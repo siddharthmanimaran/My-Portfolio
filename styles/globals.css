@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* TODO use tailwind */
-
 :root {
   --app-background: #edf7f2;
   --app-background-dark: #050816;

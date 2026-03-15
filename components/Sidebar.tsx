@@ -78,8 +78,8 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
       <div className="relative z-10 flex flex-col">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="sidebar-label">Portfolio Capsule</p>
-            <p className="sidebar-microcopy">Reliable shipping with a forward-looking UI mindset.</p>
+            <p className="sidebar-label">Developer Snapshot</p>
+            <p className="sidebar-microcopy">Frontend clarity, backend reliability, and production-ready web work.</p>
           </div>
           <button
             aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -98,7 +98,7 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
                 alt="Portrait of Siddharth Manimaran"
                 className="rounded-2xl"
                 height={132}
-                src="/me-light.webp"
+                src="/profile.jpeg"
                 style={{ objectFit: "cover" }}
                 width={132}
               />
@@ -124,13 +124,13 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
           <section className="sidebar-panel">
             <p className="sidebar-panel-title">Current Focus</p>
             <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-3">
+              <div className="flex min-w-0 items-center gap-3">
                 <span className="sidebar-icon-chip">
                   <FaUserTie className="h-5 w-5" />
                 </span>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold text-gray-900 dark:text-white">Full-Stack Engineer</p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">React, Next.js, Node.js, and scalable web delivery</p>
+                  <p className="break-words text-xs leading-5 text-gray-500 dark:text-gray-400">React, Next.js, Node.js, and scalable web delivery</p>
                 </div>
               </div>
               <span className="sidebar-metric">3+ yrs</span>
@@ -149,9 +149,13 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
                   <span className="sidebar-icon-chip">
                     <Icon className="h-4 w-4" />
                   </span>
-                  <span className="min-w-0">
+                  <span className="min-w-0 flex-1">
                     <span className="block text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">{label}</span>
-                    <span className="block truncate text-sm font-medium text-gray-900 dark:text-gray-100">{value}</span>
+                    <span
+                      className={`block text-sm font-medium leading-5 text-gray-900 dark:text-gray-100 ${id === "email" ? "break-all" : "break-words"}`}
+                    >
+                      {value}
+                    </span>
                   </span>
                 </a>
               ))}

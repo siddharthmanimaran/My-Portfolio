@@ -21,15 +21,15 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<div className="portfolio-orb portfolio-orb-two" />
 				<div className="portfolio-orb portfolio-orb-three" />
 
-				<div className="relative z-10 min-h-screen px-4 py-4 sm:px-6 lg:px-8 xl:py-8">
-					<div className="mx-auto grid max-w-7xl gap-6 xl:grid-cols-12">
-						<div className="xl:col-span-4">
+				<div className="relative z-10 min-h-screen px-3 py-4 sm:px-4 lg:px-6 xl:px-6 xl:py-8 2xl:px-8">
+					<div className="mx-auto grid w-full max-w-[95rem] gap-5 xl:grid-cols-[minmax(19rem,21rem)_minmax(0,1fr)] xl:gap-6">
+						<div className="xl:min-w-0">
 							<div className="xl:sticky xl:top-8">
 								<Sidebar toggleDarkMode={toggleDarkMode} darkMode={darkMode} />
 							</div>
 						</div>
 
-						<div className="xl:col-span-8">
+						<div className="xl:min-w-0">
 							<div className="app-main-shell transition-dark-mode">
 								<Navbar />
 								<main className="page-view">
