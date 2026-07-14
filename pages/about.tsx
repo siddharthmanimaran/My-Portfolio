@@ -6,9 +6,9 @@ import {
 } from "../components/data/data";
 
 const teamValuePoints = [
-    "Migration leadership from Angular + NgRx to React 19 + TypeScript 5 with zero business disruption.",
-    "Scalable frontend systems using Redux Toolkit, modular architecture, and resilient API integration.",
-    "Modern delivery workflows with Vite 7 + Vitest, backed by close UX and cross-functional collaboration.",
+    "AI-powered sales and CRM intelligence with AWS Bedrock — meeting summaries, email insights, and next actions.",
+    "Phased Angular 8 to React 19 migration across 12+ modules with zero production disruption.",
+    "Enterprise integrations across Salesforce, HubSpot, Gmail, Outlook, and Google Workspace DWD.",
 ];
 
 const About = () => {
@@ -21,10 +21,10 @@ const About = () => {
                         Building modern web experiences — sharp in the interface, solid in the backend.
                     </h2>
                     <p className="section-intro mt-6 max-w-3xl">
-                        I am Siddharth Manimaran, a Full Stack Developer with 4+ years of experience across the complete
-                        SDLC — from requirement analysis to deployment and maintenance. I currently lead frontend
-                        modernization at Kloze.Ai, migrating Angular + NgRx systems to React 19 + TypeScript 5, and I
-                        have delivered full-stack products across e-commerce, finance, and sports-tech domains.
+                        I am Siddharth Manimaran, a Full Stack Developer with 4.9 years of experience building scalable
+                        enterprise web applications across CRM, sales, finance, and e-commerce. At Kloze.Ai I ship
+                        AI-powered sales intelligence with AWS Bedrock while leading an Angular 8 to React 19 migration,
+                        and I have delivered full-stack products across micro-frontend and microservice architectures.
                     </p>
                 </article>
 
@@ -45,8 +45,8 @@ const About = () => {
                         <h3 className="section-heading">Where I create the most value</h3>
                     </div>
                     <p className="section-intro max-w-2xl">
-                        I am most effective in environments where responsive UI quality, clean APIs, and scalable
-                        architecture all need to move together — backed by clear team communication.
+                        I am most effective where AI features, responsive UI quality, and enterprise integrations need
+                        to move together — backed by clear cross-functional communication.
                     </p>
                 </div>
 
@@ -68,8 +68,8 @@ const About = () => {
                         <h3 className="section-heading">What I can design, build, and maintain</h3>
                     </div>
                     <p className="section-intro max-w-2xl">
-                        My range covers product-facing frontend work, backend implementation, and the technical judgment needed
-                        to keep both moving coherently.
+                        My range covers product-facing frontend work, AI-assisted workflows, backend APIs, and the
+                        judgment needed to keep CRM, auth, and data systems moving coherently.
                     </p>
                 </div>
 

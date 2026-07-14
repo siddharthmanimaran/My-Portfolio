@@ -5,10 +5,10 @@ import {
 } from "../components/data/data";
 
 const workingRhythm = [
-  "Kloze.Ai (June 2024 – Present): leading Angular + NgRx to React 19 + TypeScript 5 migration.",
-  "Casperon Technologies (April 2022 – June 2024): full-stack delivery, architecture upgrades, and 200% SEO growth.",
+  "Kloze.Ai (June 2024 – Present): AI sales intelligence with AWS Bedrock plus Angular 8 to React 19 migration.",
+  "Casperon Technologies (April 2022 – June 2024): full-stack delivery, microservices, and 200% SEO growth.",
   "Confluxus.io (Sept 2021 – April 2022): React and Next.js work for sports data and fantasy-football products.",
-  "B.Tech Electronics Engineering from SRM, Chennai — graduated 2020.",
+  "B.E. Electronics Engineering from SRM, Chennai — graduated March 2020.",
 ];
 
 const Experience = () => {
@@ -18,13 +18,13 @@ const Experience = () => {
         <article className="hero-copy-card transition-dark-mode">
           <p className="page-kicker">Work History</p>
           <h2 className="hero-title font-display">
-            4+ years across three companies — building, migrating, and scaling full-stack web applications.
+            4.9 years across three companies — building AI features, migrating legacies, and scaling full-stack apps.
           </h2>
           <p className="section-intro mt-6 max-w-3xl">
-            My experience spans current migration leadership at Kloze.Ai, architecture and performance work at
-            Casperon Technologies, and product development at Confluxus.io. Across these roles, I have delivered
-            features throughout the SDLC in Agile and Waterfall environments while collaborating with designers,
-            mobile developers, and cross-functional product teams.
+            My experience spans AI-powered CRM and sales workflows at Kloze.Ai, architecture and performance work at
+            Casperon Technologies, and product development at Confluxus.io. Across these roles I have delivered
+            features throughout the SDLC while collaborating with designers, mobile developers, and cross-functional
+            product teams.
           </p>
         </article>
 
@@ -45,8 +45,8 @@ const Experience = () => {
             <h3 className="section-heading">Key numbers from real projects</h3>
           </div>
           <p className="section-intro max-w-2xl">
-            Real numbers from actual projects — SEO-driven traffic growth, error reduction, and performance
-            improvements delivered at Casperon Technologies.
+            Real numbers from actual projects — migration scope, rendering performance, revenue support at Kloze.Ai,
+            and SEO-driven traffic growth at Casperon Technologies.
           </p>
         </div>
 
@@ -68,8 +68,8 @@ const Experience = () => {
             <h3 className="section-heading">Where I have worked</h3>
           </div>
           <p className="section-intro max-w-2xl">
-            Three companies across US and India-based teams, with work spanning migration programs,
-            full-stack product delivery, and measurable performance outcomes.
+            Three companies across US and India-based teams, with work spanning AI product features, migration
+            programs, enterprise integrations, and measurable performance outcomes.
           </p>
         </div>
 

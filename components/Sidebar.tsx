@@ -79,7 +79,7 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="sidebar-label">Developer Snapshot</p>
-            <p className="sidebar-microcopy">Frontend clarity, backend reliability, and production-ready web work.</p>
+            <p className="sidebar-microcopy">React 19, AI-assisted CRM workflows, and production-ready migrations.</p>
           </div>
           <button
             aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -116,7 +116,7 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
           </h3>
 
           <p className="mt-4 max-w-xs text-sm leading-6 text-gray-600 dark:text-gray-300">
-            Full-stack developer focused on polished frontends, resilient APIs, and product experiences that feel modern without sacrificing clarity.
+            Full-stack developer focused on React 19, AI-powered CRM workflows, and enterprise migrations that stay clear in production.
           </p>
         </div>
 
@@ -130,10 +130,10 @@ const Sidebar = ({ toggleDarkMode, darkMode }: Props) => {
                 </span>
                 <div className="min-w-0">
                   <p className="font-semibold text-gray-900 dark:text-white">Full-Stack Engineer</p>
-                  <p className="break-words text-xs leading-5 text-gray-500 dark:text-gray-400">React 19, TypeScript 5, Redux Toolkit, and migration-focused delivery</p>
+                  <p className="break-words text-xs leading-5 text-gray-500 dark:text-gray-400">React 19, AWS Bedrock, CRM integrations, and Angular-to-React migration</p>
                 </div>
               </div>
-              <span className="sidebar-metric">4+ yrs</span>
+              <span className="sidebar-metric">4.9 yrs</span>
             </div>
           </section>
 

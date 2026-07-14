@@ -20,11 +20,11 @@ const Resume = () => {
         <article className="hero-copy-card transition-dark-mode">
           <p className="page-kicker">Resume View</p>
           <h2 className="hero-title font-display">
-            A focused overview of the stack, workflow, and delivery style behind the portfolio.
+            A focused overview of the stack, AI tooling, and delivery style behind the portfolio.
           </h2>
           <p className="section-intro mt-6 max-w-3xl">
-            This page is designed to give a fast hiring snapshot: the technology range I work in, how I approach shipping,
-            and how to access the full PDF when it is available in the project assets.
+            This page is designed to give a fast hiring snapshot: React and TypeScript depth, AWS Bedrock and CRM
+            integrations, how I approach shipping, and how to access the full PDF when it is available in the project assets.
           </p>
 
           <div className="resume-toolbar mt-8">
@@ -77,7 +77,8 @@ const Resume = () => {
             <h3 className="section-heading">Technologies and workflow areas</h3>
           </div>
           <p className="section-intro max-w-2xl">
-            The profile is strongest in modern JavaScript delivery, with enough cross-stack range to keep feature work cohesive end to end.
+            The profile is strongest in modern JavaScript delivery, enterprise CRM integrations, and AI-assisted
+            product features — with enough cross-stack range to keep feature work cohesive end to end.
           </p>
         </div>
 
@@ -102,7 +103,8 @@ const Resume = () => {
             <h3 className="section-heading">What stands out on the resume</h3>
           </div>
           <p className="section-intro max-w-2xl">
-            Beyond tools, the strongest differentiator is usually how consistently product intent, interface quality, and implementation discipline are kept aligned.
+            Beyond tools, the strongest differentiator is how consistently AI insights, CRM workflows, interface
+            quality, and implementation discipline stay aligned.
           </p>
         </div>
 

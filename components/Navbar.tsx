@@ -3,17 +3,17 @@ import { useRouter } from "next/router";
 
 const navItems = [
   {
-    description: "Positioning, strengths, and the way I build products.",
+    description: "AI products, migrations, and the way I build enterprise web systems.",
     name: "About",
     route: "/",
   },
   {
-    description: "How I work through delivery, iteration, and technical ownership.",
+    description: "Kloze.Ai, Casperon, and Confluxus — delivery ownership with measured outcomes.",
     name: "Experience",
     route: "/experience",
   },
   {
-    description: "A clean snapshot of stack, workflow, and profile details.",
+    description: "Stack, AI tooling, cloud workflow, and a direct path to the PDF resume.",
     name: "Resume",
     route: "/resume",
   },
